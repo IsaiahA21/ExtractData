@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1225,2522</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>584,2534.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
@@ -52,7 +52,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="37">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="74">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -90,9 +90,10 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="552,2457" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="552,2470" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="path" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
@@ -103,29 +104,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetEnvironmentFolder DisplayName="Get Environment Folder" FolderPath="[path]" sap:VirtualizedContainerService.HintSize="510,61" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="MyDocuments" />
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="sheet1" WorkbookPath="[path+fixedFolderPath]" />
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CloneData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="[path+fixedFolderPath]" />
-    <ui:ClearDataTable DataTable="[CloneData]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="510,79" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510,1612" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.sec.gov/edgar/searchedgar/companysearch">
+    <ui:GetEnvironmentFolder DisplayName="Get Environment Folder" FolderPath="[path]" sap:VirtualizedContainerService.HintSize="510,62.6666666666667" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="MyDocuments" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="sheet1" WorkbookPath="[path+fixedFolderPath]" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CloneData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="[path+fixedFolderPath]" />
+    <ui:ClearDataTable DataTable="[CloneData]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="510,80.6666666666667" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510,1621.33333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.sec.gov/edgar/searchedgar/companysearch">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1511" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1518.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1419" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1426.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="376,1305" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,1311.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="addr" />
                       <Variable x:TypeArguments="x:String" Name="phoneNumber" />
@@ -215,8 +216,8 @@
                         <OutArgument x:TypeArguments="x:String">[cik]</OutArgument>
                       </ui:GetValue.Value>
                     </ui:GetValue>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow.Item(&quot;Company&quot;).ToString, addr, phoneNumber, cik}]" DataTable="[CloneData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Got &quot;+ CurrentRow.Item(&quot;Company&quot;).ToString + &quot; data&quot;]" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow.Item(&quot;Company&quot;).ToString, addr, phoneNumber, cik}]" DataTable="[CloneData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Got &quot;+ CurrentRow.Item(&quot;Company&quot;).ToString + &quot; data&quot;]" />
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Back'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
@@ -247,7 +248,7 @@
         </ActivityAction>
       </ui:OpenBrowser.Body>
     </ui:OpenBrowser>
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[CloneData]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="510,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="[path+fixedFolderPath]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,84" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Finished! Open sheet2 in excel file. path is: &quot; + path+fixedFolderPath]" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[CloneData]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="510,114.666666666667" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="[path+fixedFolderPath]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Finished!! Open sheet2 in excel file. path is: &quot; + path+fixedFolderPath]" />
   </Sequence>
 </Activity>
